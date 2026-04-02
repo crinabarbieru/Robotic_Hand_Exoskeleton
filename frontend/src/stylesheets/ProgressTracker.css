@@ -1,0 +1,135 @@
+.progress-tracker {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #0D274D;
+    max-height: calc(100vh - 100px);
+}
+
+.progress-tracker h3 {
+    color: #32538F;
+    margin-bottom: 24px;
+    margin-top: 15px;
+    font-size: 28px;
+    border-bottom: 2px solid #32538F;
+    padding-bottom: 8px;
+}
+.progress-contents {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  padding-top: 0;
+
+}
+.progress-contents::-webkit-scrollbar {
+  width: 8px;
+}
+
+.progress-contents::-webkit-scrollbar-track {
+  background: #EFF7FF;
+  border-radius: 4px;
+}
+
+.progress-contents::-webkit-scrollbar-thumb {
+  background: #32538F;
+  border-radius: 4px;
+}
+
+.progress-contents::-webkit-scrollbar-thumb:hover {
+  background: #4A90E2;
+}
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.stat-card {
+    background: #EFF7FF;
+    border-radius: 8px;
+    padding: 7px 10px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(13, 39, 77, 0.1);
+    border: 1px solid #32538F;
+}
+
+.stat-card.highlight-card {
+    background: #bdd7ff;
+}
+
+.stat-card h3 {
+    font-size: 23px;
+    margin: 0;
+    color: #0D274D;
+}
+
+
+.stat-card p {
+    margin: 5px 0 0;
+    color: #32538F;
+}
+
+.calendar-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(13, 39, 77, 0.1);
+    border: 1px solid #EFF7FF;
+}
+
+.calendar-container h2 {
+    color: #32538F;
+    margin-bottom: 20px;
+    font-size: 23px;
+    border-bottom: 2px solid #32538F;
+    padding-bottom: 8px;
+
+}
+
+.calendar-legend {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(13, 39, 77, 0.1);
+}
+
+/* Calendar overrides */
+.rbc-month-view {
+    border: 1px solid #EFF7FF;
+}
+
+.rbc-header {
+    color: #32538F;
+    padding: 10px 0;
+    border-bottom: 2px solid #EFF7FF;
+}
+
+.rbc-day-bg+.rbc-day-bg {
+    border-left: 1px solid #EFF7FF;
+}
+
+.rbc-off-range-bg {
+    background: #f8fafc;
+}

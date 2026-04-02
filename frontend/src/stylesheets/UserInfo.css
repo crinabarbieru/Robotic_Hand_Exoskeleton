@@ -1,0 +1,27 @@
+.user_info_div {
+    color: #1A3E72;
+    padding: 0px 20px;
+    max-width: 100%;
+    max-height: calc(100vh - 100px);
+    margin: 0 auto;
+}
+
+.user_info_div h3 {
+    color: #32538F;
+    margin-bottom: 24px;
+    margin-top: 15px;
+    font-size: 28px;
+    border-bottom: 2px solid #32538F;
+    padding-bottom: 8px;
+}
+
+.user_info_div p {
+    font-size: 19px;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.user_info_div strong {
+    color: #0D274D;
+    font-weight: 600;
+}

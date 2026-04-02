@@ -1,0 +1,13 @@
+# Ignore build directories
+/target/
+/build/
+
+# Ignore IntelliJ IDE files
+.idea/
+/*.iml
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore log files
+*.log

@@ -1,0 +1,105 @@
+.header {
+    background-color: #0D274D;
+    color: #a8cbff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 25px;
+    height: 70px;
+    box-sizing: border-box;
+    max-height: max-content;
+}
+
+.header>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 12px;
+    position: relative;
+}
+
+.username {
+    color: #7FB3FF;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+#app_name {
+    color: #7FB3FF;
+    margin: 2px;
+    float: left;
+}
+
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;  
+  color: #7FB3FF;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+.user-menu-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-arrow {
+    color: #7FB3FF;
+    font-size: 20px;
+}
+
+.user-menu-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #0D274D;
+    border: 1px solid #7FB3FF;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 180px;
+    overflow: hidden;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #a8cbff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+#dropdown-icon:hover, .dropdown-item:hover {
+    background-color: rgba(127, 179, 255, 0.2);
+    color: #ffffff;
+}

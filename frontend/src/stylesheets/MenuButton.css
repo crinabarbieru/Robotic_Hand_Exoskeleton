@@ -1,0 +1,28 @@
+.menu_button {
+    background-color: #0D274D;
+    color: #7FB3FF;
+    padding: 14px 20px;
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .menu_button:hover {
+    background-color: #071d3d;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu_button:focus {
+    background-color: #071d3d;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(186, 224, 255, 0.6);
+  }

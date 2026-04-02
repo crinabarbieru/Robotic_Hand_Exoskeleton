@@ -1,0 +1,30 @@
+/*
+Color scheme:
+
+-dark-blue: #0D274D;
+-mid-blue: #32538F;
+-light-blue: #EFF7FF;
+  
+-accent-blue: #4A90E2;
+-secondary-blue: #7FB3FF;
+-alert-red: #FF6B6B;
+-success-green: #4CAF50;
+*/
+
+html,
+body,
+#root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+:root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}

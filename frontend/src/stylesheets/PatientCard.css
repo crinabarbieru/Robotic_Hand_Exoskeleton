@@ -1,0 +1,318 @@
+.patient-card {
+  background-color: #EFF7FF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(13, 39, 77, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  min-width: 500px;
+  max-width: 530px;
+  margin: 20px auto;
+}
+
+.card-header {
+  background-color: #EFF7FF;
+  color: white;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  color: #32538F;
+  margin-top: 15px;
+  border-bottom: 2px solid #32538F;
+  padding-bottom: 8px;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+}
+
+.edit-btn {
+  background-color: #4A90E2;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #32538F;
+}
+
+.delete-btn {
+  background-color: #FF6B6B;
+  color: white;
+}
+
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+
+.patient-id {
+  background-color: #32538F;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.info-section,
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-row,
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(50, 83, 143, 0.1);
+}
+
+.info-label,
+.timeline-label {
+  color: #0D274D;
+  font-weight: 500;
+}
+
+.info-value,
+.timeline-date {
+  padding: 0px 2px;
+  color: #32538F;
+}
+
+.highlight {
+  color: #4A90E2;
+  font-weight: 600;
+}
+
+.timeline-date.alert {
+  color: #FF6B6B;
+}
+
+.timeline-date.success {
+  color: #4CAF50;
+}
+
+.rehab-progress {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: rgba(74, 144, 226, 0.1);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.progress-label {
+  display: block;
+  color: #32538F;
+  font-size: 0.9rem;
+}
+
+.progress-value {
+  display: block;
+  color: #4A90E2;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-footer {
+  background-color: #EFF7FF;
+  border-top: 1px solid rgba(50, 83, 143, 0.1);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #32538F;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #4A90E2;
+  border: 1px solid #4A90E2;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #EFF7FF;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(13, 39, 77, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-dialog,
+.edit-dialog {
+  background-color: #EFF7FF;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(13, 39, 77, 0.2);
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #7FB3FF;
+}
+
+.edit-dialog {
+  max-width: 600px;
+}
+
+.edit-dialog h3,
+.confirmation-dialog h3 {
+  color: #0D274D;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.edit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.form-group label {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  font-weight: 600;
+  color: #32538F;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #7FB3FF;
+  border-radius: 4px;
+  background-color: white;
+  color: #0D274D;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cancel-btn {
+  padding: 10px 20px;
+  background-color: #EFF7FF;
+  color: #32538F;
+  border: 1px solid #32538F;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #32538F;
+  color: white;
+}
+
+.confirm-btn {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn:hover {
+  background-color: #32538F;
+}
+
+.confirmation-dialog .confirm-btn {
+  background-color: #FF6B6B;
+}
+
+.confirmation-dialog .confirm-btn:hover {
+  background-color: #e05555;
+}
+
+.edit-dialog .confirm-btn {
+  background-color: #4CAF50;
+}
+
+.edit-dialog .confirm-btn:hover {
+  background-color: #3d8b40;
+}
+
+.edit-dialog .error-message{
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .edit-form {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmation-dialog,
+  .edit-dialog {
+    width: 90%;
+    padding: 20px;
+  }
+}

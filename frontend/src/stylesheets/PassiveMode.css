@@ -1,0 +1,111 @@
+.passive-mode {
+    padding: 0px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: calc(100vh - 100px);
+}
+.passive-mode-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.passive-mode h2 {
+   color: #32538F;
+    margin-bottom: 24px;
+    margin-top: 15px;
+    font-size: 28px;
+    border-bottom: 2px solid #32538F;
+    padding-bottom: 8px;
+}
+.status-container {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.status-message {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar-container {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.1s linear;
+}
+
+.sensor-data-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+.data-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.data-label {
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.button-group button {
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
+
+.error-message {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.instructions {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.instructions ol {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.instructions li {
+    margin-bottom: 0.5rem;
+}

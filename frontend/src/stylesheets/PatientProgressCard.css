@@ -1,0 +1,87 @@
+.progress-card {
+    background-color: #EFF7FF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(13, 39, 77, 0.1);
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    min-width: 500px;
+    max-width: 530px;
+    margin: 20px auto;
+}
+
+.progress-header {
+    background-color: #EFF7FF;
+    color: white;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-header h2 {
+    color: #32538F;
+    margin-top: 15px;
+    border-bottom: 2px solid #32538F;
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.progress-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.metric-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.metric-group.highlight {
+    background-color: #EFF7FF;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.metric {
+    flex: 1;
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0D274D;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #32538F;
+}
+
+.last-session {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #32538F;
+    margin: 10px 0px;
+}
+
+.last-session-date {
+    font-weight: bold;
+    color: #0D274D;
+}
+
+.no-data {
+    text-align: center;
+    color: #32538F;
+    padding: 20px 0;
+}
+.day-cell {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
