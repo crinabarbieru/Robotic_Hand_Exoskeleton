@@ -24,3 +24,8 @@ The project includes a full-stack application and embedded system components org
 
 - **Database Script**  
   SQL scripts for database creation and initialization
+
+
+`3d_models` contains the STL files for all exoskeleton components. To recreate the exoskeleton, the components in STL files need to be sliced and 3D printed (the prototype was printed using PLA and TPU filaments).
+
+`img` contains images of the initial and final protoypes, as well as images with 3d models of individual components.
