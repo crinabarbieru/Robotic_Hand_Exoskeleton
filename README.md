@@ -14,16 +14,16 @@ The project includes a full-stack application and embedded system components org
 `ExoPath_webapp` contains the complete code for the web application and device control system:
 
 - **Frontend (React)**  
-  User interface for therapists and patients
+  User interface for therapists and patients, and communication with the robotic device.
 
 - **Backend (Java Spring Boot)**  
-  Handles business logic, APIs, and communication with the device
+  Handles business logic, APIs, communication with the database.
 
 - **esp32_**  
-  Firmware for the Arduino Nano ESP32 microcontroller used to control the exoskeleton hardware
+  Firmware for the Arduino Nano ESP32 microcontroller used to control the exoskeleton hardware.
 
 - **Database Script**  
-  SQL scripts for database creation and initialization
+  SQL scripts for database creation and initialization.
 
 
 `3d_models` contains the STL files for all exoskeleton components. To recreate the exoskeleton, the components in STL files need to be sliced and 3D printed (the prototype was printed using PLA and TPU filaments).
